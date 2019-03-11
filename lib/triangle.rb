@@ -9,9 +9,9 @@ class Triangle
   def kind
     if @side1 + @side2 > @side3 || @side1 + @side3 > @side2 || @side2 + @side3 > @side1
       begin
-        raise TraingleException
+        raise TriangleError
       rescue
-        TrangleException.message
+        TriangleError.message
       end
     end
     
@@ -24,7 +24,7 @@ class Triangle
     end
   end
   
-  class TriangleException < StandardException
+  class TrangleError < StandardError
     def message
     end
   end
