@@ -24,7 +24,7 @@ class Triangle
     end
   end
   
-  class TriangleException > StandardException
+  class TriangleException < StandardException
     def message
     end
   end
